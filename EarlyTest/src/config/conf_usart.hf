@@ -1,0 +1,36 @@
+/*
+ * conf_usart_h.h
+ *
+ * Created: 11-May-15 5:22:53 PM
+ *  Author: Raph
+ */ 
+
+
+#ifndef CONF_USART_H_
+#define CONF_USART_H_
+
+/*! \name Configuration
+ */
+/* ! @{ */
+
+/*
+ * For USARTA1 connect a two wire cable for PORTE0 to connect with RXD
+ * For USARTA1 connect a two wire cable for PORTE1 to connect with TXD
+ */
+/*#define USART_SERIAL_EXAMPLE            &USARTA0*/
+
+/*
+ * For USARTA1 connect a two wire cable for PORTD2 to connect with RXD
+ * For USARTA1 connect a two wire cable for PORTD3 to connect with TXD
+ */
+#define USART_SERIAL_EXAMPLE            &USARTA0
+
+#define USART_SERIAL_EXAMPLE_BAUDRATE   9600
+#define USART_SERIAL_CHAR_LENGTH        USART_CHSIZE_8BIT_gc
+#define USART_SERIAL_PARITY             USART_PMODE_DISABLED_gc
+#define USART_SERIAL_STOP_BIT           false
+/* ! @} */
+
+
+
+#endif /* CONF_USART,H_H_ */
