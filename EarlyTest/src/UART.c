@@ -8,7 +8,7 @@
 #include <asf.h>
 #include "Defines.h"
 #include "UART.h"
-#include "HW_Interface.h"
+//#include "HW_Interface.h"
 #include <util/delay.h>
 
 void USART_Init(void)
@@ -18,10 +18,8 @@ void USART_Init(void)
 
 	UBRR0H = (BAUD_PRESCALE >> 8); // Load upper 8-bits of the baud rate value into the high byte of the UBRR register
 	UBRR0L = BAUD_PRESCALE; // Load lower 8-bits of the baud rate value into the low byte of the UBRR register
-
-		
-	USART_Send_String("It's going to be legen...");
-	USART_Send_String("dary!\n");	
+	
+	USART_Send_String("USART initiated");
 } // USART_Init
 
 int USART_Send(char sendByte)

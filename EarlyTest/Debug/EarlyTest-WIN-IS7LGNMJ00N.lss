@@ -1,0 +1,1099 @@
+
+EarlyTest.elf:     file format elf32-avr
+
+Sections:
+Idx Name          Size      VMA       LMA       File off  Algn
+  0 .data         0000002c  00800200  0000067a  0000070e  2**0
+                  CONTENTS, ALLOC, LOAD, DATA
+  1 .text         0000067a  00000000  00000000  00000094  2**1
+                  CONTENTS, ALLOC, LOAD, READONLY, CODE
+  2 .bss          00000084  0080022c  0080022c  0000073a  2**0
+                  ALLOC
+  3 .comment      00000030  00000000  00000000  0000073a  2**0
+                  CONTENTS, READONLY
+  4 .debug_aranges 000000f0  00000000  00000000  0000076a  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  5 .debug_info   0000092f  00000000  00000000  0000085a  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  6 .debug_abbrev 000005c7  00000000  00000000  00001189  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  7 .debug_line   00001444  00000000  00000000  00001750  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  8 .debug_frame  00000298  00000000  00000000  00002b94  2**2
+                  CONTENTS, READONLY, DEBUGGING
+  9 .debug_str    000166a9  00000000  00000000  00002e2c  2**0
+                  CONTENTS, READONLY, DEBUGGING
+ 10 .debug_loc    00000686  00000000  00000000  000194d5  2**0
+                  CONTENTS, READONLY, DEBUGGING
+ 11 .debug_ranges 000000a0  00000000  00000000  00019b5b  2**0
+                  CONTENTS, READONLY, DEBUGGING
+ 12 .debug_macro  0000638e  00000000  00000000  00019bfb  2**0
+                  CONTENTS, READONLY, DEBUGGING
+
+Disassembly of section .text:
+
+00000000 <__vectors>:
+   0:	8f c0       	rjmp	.+286    	; 0x120 <__ctors_end>
+   2:	00 00       	nop
+   4:	aa c0       	rjmp	.+340    	; 0x15a <__bad_interrupt>
+   6:	00 00       	nop
+   8:	a8 c0       	rjmp	.+336    	; 0x15a <__bad_interrupt>
+   a:	00 00       	nop
+   c:	a6 c0       	rjmp	.+332    	; 0x15a <__bad_interrupt>
+   e:	00 00       	nop
+  10:	a4 c0       	rjmp	.+328    	; 0x15a <__bad_interrupt>
+  12:	00 00       	nop
+  14:	a2 c0       	rjmp	.+324    	; 0x15a <__bad_interrupt>
+  16:	00 00       	nop
+  18:	a0 c0       	rjmp	.+320    	; 0x15a <__bad_interrupt>
+  1a:	00 00       	nop
+  1c:	9e c0       	rjmp	.+316    	; 0x15a <__bad_interrupt>
+  1e:	00 00       	nop
+  20:	9c c0       	rjmp	.+312    	; 0x15a <__bad_interrupt>
+  22:	00 00       	nop
+  24:	9a c0       	rjmp	.+308    	; 0x15a <__bad_interrupt>
+  26:	00 00       	nop
+  28:	98 c0       	rjmp	.+304    	; 0x15a <__bad_interrupt>
+  2a:	00 00       	nop
+  2c:	96 c0       	rjmp	.+300    	; 0x15a <__bad_interrupt>
+  2e:	00 00       	nop
+  30:	94 c0       	rjmp	.+296    	; 0x15a <__bad_interrupt>
+  32:	00 00       	nop
+  34:	92 c0       	rjmp	.+292    	; 0x15a <__bad_interrupt>
+  36:	00 00       	nop
+  38:	90 c0       	rjmp	.+288    	; 0x15a <__bad_interrupt>
+  3a:	00 00       	nop
+  3c:	8e c0       	rjmp	.+284    	; 0x15a <__bad_interrupt>
+  3e:	00 00       	nop
+  40:	8c c0       	rjmp	.+280    	; 0x15a <__bad_interrupt>
+  42:	00 00       	nop
+  44:	f6 c2       	rjmp	.+1516   	; 0x632 <__vector_17>
+  46:	00 00       	nop
+  48:	88 c0       	rjmp	.+272    	; 0x15a <__bad_interrupt>
+  4a:	00 00       	nop
+  4c:	86 c0       	rjmp	.+268    	; 0x15a <__bad_interrupt>
+  4e:	00 00       	nop
+  50:	84 c0       	rjmp	.+264    	; 0x15a <__bad_interrupt>
+  52:	00 00       	nop
+  54:	82 c0       	rjmp	.+260    	; 0x15a <__bad_interrupt>
+  56:	00 00       	nop
+  58:	80 c0       	rjmp	.+256    	; 0x15a <__bad_interrupt>
+  5a:	00 00       	nop
+  5c:	7e c0       	rjmp	.+252    	; 0x15a <__bad_interrupt>
+  5e:	00 00       	nop
+  60:	7c c0       	rjmp	.+248    	; 0x15a <__bad_interrupt>
+  62:	00 00       	nop
+  64:	7a c0       	rjmp	.+244    	; 0x15a <__bad_interrupt>
+  66:	00 00       	nop
+  68:	78 c0       	rjmp	.+240    	; 0x15a <__bad_interrupt>
+  6a:	00 00       	nop
+  6c:	76 c0       	rjmp	.+236    	; 0x15a <__bad_interrupt>
+  6e:	00 00       	nop
+  70:	74 c0       	rjmp	.+232    	; 0x15a <__bad_interrupt>
+  72:	00 00       	nop
+  74:	72 c0       	rjmp	.+228    	; 0x15a <__bad_interrupt>
+  76:	00 00       	nop
+  78:	70 c0       	rjmp	.+224    	; 0x15a <__bad_interrupt>
+  7a:	00 00       	nop
+  7c:	6e c0       	rjmp	.+220    	; 0x15a <__bad_interrupt>
+  7e:	00 00       	nop
+  80:	6c c0       	rjmp	.+216    	; 0x15a <__bad_interrupt>
+  82:	00 00       	nop
+  84:	6a c0       	rjmp	.+212    	; 0x15a <__bad_interrupt>
+  86:	00 00       	nop
+  88:	68 c0       	rjmp	.+208    	; 0x15a <__bad_interrupt>
+  8a:	00 00       	nop
+  8c:	66 c0       	rjmp	.+204    	; 0x15a <__bad_interrupt>
+  8e:	00 00       	nop
+  90:	64 c0       	rjmp	.+200    	; 0x15a <__bad_interrupt>
+  92:	00 00       	nop
+  94:	62 c0       	rjmp	.+196    	; 0x15a <__bad_interrupt>
+  96:	00 00       	nop
+  98:	60 c0       	rjmp	.+192    	; 0x15a <__bad_interrupt>
+  9a:	00 00       	nop
+  9c:	5e c0       	rjmp	.+188    	; 0x15a <__bad_interrupt>
+  9e:	00 00       	nop
+  a0:	5c c0       	rjmp	.+184    	; 0x15a <__bad_interrupt>
+  a2:	00 00       	nop
+  a4:	5a c0       	rjmp	.+180    	; 0x15a <__bad_interrupt>
+  a6:	00 00       	nop
+  a8:	58 c0       	rjmp	.+176    	; 0x15a <__bad_interrupt>
+  aa:	00 00       	nop
+  ac:	56 c0       	rjmp	.+172    	; 0x15a <__bad_interrupt>
+  ae:	00 00       	nop
+  b0:	54 c0       	rjmp	.+168    	; 0x15a <__bad_interrupt>
+  b2:	00 00       	nop
+  b4:	52 c0       	rjmp	.+164    	; 0x15a <__bad_interrupt>
+  b6:	00 00       	nop
+  b8:	50 c0       	rjmp	.+160    	; 0x15a <__bad_interrupt>
+  ba:	00 00       	nop
+  bc:	4e c0       	rjmp	.+156    	; 0x15a <__bad_interrupt>
+  be:	00 00       	nop
+  c0:	4c c0       	rjmp	.+152    	; 0x15a <__bad_interrupt>
+  c2:	00 00       	nop
+  c4:	4a c0       	rjmp	.+148    	; 0x15a <__bad_interrupt>
+  c6:	00 00       	nop
+  c8:	48 c0       	rjmp	.+144    	; 0x15a <__bad_interrupt>
+  ca:	00 00       	nop
+  cc:	46 c0       	rjmp	.+140    	; 0x15a <__bad_interrupt>
+  ce:	00 00       	nop
+  d0:	44 c0       	rjmp	.+136    	; 0x15a <__bad_interrupt>
+  d2:	00 00       	nop
+  d4:	42 c0       	rjmp	.+132    	; 0x15a <__bad_interrupt>
+  d6:	00 00       	nop
+  d8:	40 c0       	rjmp	.+128    	; 0x15a <__bad_interrupt>
+  da:	00 00       	nop
+  dc:	3e c0       	rjmp	.+124    	; 0x15a <__bad_interrupt>
+  de:	00 00       	nop
+  e0:	3c c0       	rjmp	.+120    	; 0x15a <__bad_interrupt>
+  e2:	00 00       	nop
+  e4:	3a c0       	rjmp	.+116    	; 0x15a <__bad_interrupt>
+  e6:	00 00       	nop
+  e8:	38 c0       	rjmp	.+112    	; 0x15a <__bad_interrupt>
+  ea:	00 00       	nop
+  ec:	c6 c0       	rjmp	.+396    	; 0x27a <__vector_59>
+  ee:	00 00       	nop
+  f0:	f3 c0       	rjmp	.+486    	; 0x2d8 <__vector_60>
+  f2:	00 00       	nop
+  f4:	32 c0       	rjmp	.+100    	; 0x15a <__bad_interrupt>
+  f6:	00 00       	nop
+  f8:	30 c0       	rjmp	.+96     	; 0x15a <__bad_interrupt>
+  fa:	00 00       	nop
+  fc:	93 c0       	rjmp	.+294    	; 0x224 <__vector_63>
+  fe:	00 00       	nop
+ 100:	2c c0       	rjmp	.+88     	; 0x15a <__bad_interrupt>
+ 102:	00 00       	nop
+ 104:	2a c0       	rjmp	.+84     	; 0x15a <__bad_interrupt>
+ 106:	00 00       	nop
+ 108:	28 c0       	rjmp	.+80     	; 0x15a <__bad_interrupt>
+ 10a:	00 00       	nop
+ 10c:	26 c0       	rjmp	.+76     	; 0x15a <__bad_interrupt>
+ 10e:	00 00       	nop
+ 110:	24 c0       	rjmp	.+72     	; 0x15a <__bad_interrupt>
+ 112:	00 00       	nop
+ 114:	22 c0       	rjmp	.+68     	; 0x15a <__bad_interrupt>
+ 116:	00 00       	nop
+ 118:	20 c0       	rjmp	.+64     	; 0x15a <__bad_interrupt>
+ 11a:	00 00       	nop
+ 11c:	1e c0       	rjmp	.+60     	; 0x15a <__bad_interrupt>
+	...
+
+00000120 <__ctors_end>:
+ 120:	11 24       	eor	r1, r1
+ 122:	1f be       	out	0x3f, r1	; 63
+ 124:	cf ef       	ldi	r28, 0xFF	; 255
+ 126:	d1 e4       	ldi	r29, 0x41	; 65
+ 128:	de bf       	out	0x3e, r29	; 62
+ 12a:	cd bf       	out	0x3d, r28	; 61
+
+0000012c <__do_copy_data>:
+ 12c:	12 e0       	ldi	r17, 0x02	; 2
+ 12e:	a0 e0       	ldi	r26, 0x00	; 0
+ 130:	b2 e0       	ldi	r27, 0x02	; 2
+ 132:	ea e7       	ldi	r30, 0x7A	; 122
+ 134:	f6 e0       	ldi	r31, 0x06	; 6
+ 136:	00 e0       	ldi	r16, 0x00	; 0
+ 138:	0b bf       	out	0x3b, r16	; 59
+ 13a:	02 c0       	rjmp	.+4      	; 0x140 <__do_copy_data+0x14>
+ 13c:	07 90       	elpm	r0, Z+
+ 13e:	0d 92       	st	X+, r0
+ 140:	ac 32       	cpi	r26, 0x2C	; 44
+ 142:	b1 07       	cpc	r27, r17
+ 144:	d9 f7       	brne	.-10     	; 0x13c <__do_copy_data+0x10>
+
+00000146 <__do_clear_bss>:
+ 146:	22 e0       	ldi	r18, 0x02	; 2
+ 148:	ac e2       	ldi	r26, 0x2C	; 44
+ 14a:	b2 e0       	ldi	r27, 0x02	; 2
+ 14c:	01 c0       	rjmp	.+2      	; 0x150 <.do_clear_bss_start>
+
+0000014e <.do_clear_bss_loop>:
+ 14e:	1d 92       	st	X+, r1
+
+00000150 <.do_clear_bss_start>:
+ 150:	a0 3b       	cpi	r26, 0xB0	; 176
+ 152:	b2 07       	cpc	r27, r18
+ 154:	e1 f7       	brne	.-8      	; 0x14e <.do_clear_bss_loop>
+ 156:	5f d2       	rcall	.+1214   	; 0x616 <main>
+ 158:	8e c2       	rjmp	.+1308   	; 0x676 <_exit>
+
+0000015a <__bad_interrupt>:
+ 15a:	52 cf       	rjmp	.-348    	; 0x0 <__vectors>
+
+0000015c <rfBegin>:
+    // Read from the buffer tail, and update the tail pointer.
+    char c = radioRXBuffer.buffer[radioRXBuffer.tail];
+    radioRXBuffer.tail = (unsigned int)(radioRXBuffer.tail + 1) % RF_BUFFER_SIZE;
+    return c;
+  }
+}
+ 15c:	ec e2       	ldi	r30, 0x2C	; 44
+ 15e:	f2 e0       	ldi	r31, 0x02	; 2
+ 160:	8c ea       	ldi	r24, 0xAC	; 172
+ 162:	92 e0       	ldi	r25, 0x02	; 2
+ 164:	11 92       	st	Z+, r1
+ 166:	e8 17       	cp	r30, r24
+ 168:	f9 07       	cpc	r31, r25
+ 16a:	e1 f7       	brne	.-8      	; 0x164 <rfBegin+0x8>
+ 16c:	10 92 ae 02 	sts	0x02AE, r1
+ 170:	10 92 ad 02 	sts	0x02AD, r1
+ 174:	10 92 ac 02 	sts	0x02AC, r1
+ 178:	10 92 ab 02 	sts	0x02AB, r1
+ 17c:	e9 e3       	ldi	r30, 0x39	; 57
+ 17e:	f1 e0       	ldi	r31, 0x01	; 1
+ 180:	80 81       	ld	r24, Z
+ 182:	81 60       	ori	r24, 0x01	; 1
+ 184:	80 83       	st	Z, r24
+ 186:	10 92 4e 01 	sts	0x014E, r1
+ 18a:	88 e0       	ldi	r24, 0x08	; 8
+ 18c:	80 93 42 01 	sts	0x0142, r24
+ 190:	8f e9       	ldi	r24, 0x9F	; 159
+ 192:	9f e0       	ldi	r25, 0x0F	; 15
+ 194:	01 97       	sbiw	r24, 0x01	; 1
+ 196:	f1 f7       	brne	.-4      	; 0x194 <rfBegin+0x38>
+ 198:	00 c0       	rjmp	.+0      	; 0x19a <rfBegin+0x3e>
+ 19a:	00 00       	nop
+ 19c:	80 91 41 01 	lds	r24, 0x0141
+ 1a0:	8f 71       	andi	r24, 0x1F	; 31
+ 1a2:	88 30       	cpi	r24, 0x08	; 8
+ 1a4:	b1 f4       	brne	.+44     	; 0x1d2 <rfBegin+0x76>
+ 1a6:	e4 e4       	ldi	r30, 0x44	; 68
+ 1a8:	f1 e0       	ldi	r31, 0x01	; 1
+ 1aa:	80 81       	ld	r24, Z
+ 1ac:	80 62       	ori	r24, 0x20	; 32
+ 1ae:	80 83       	st	Z, r24
+ 1b0:	8c e4       	ldi	r24, 0x4C	; 76
+ 1b2:	80 93 4e 01 	sts	0x014E, r24
+ 1b6:	e8 e4       	ldi	r30, 0x48	; 72
+ 1b8:	f1 e0       	ldi	r31, 0x01	; 1
+ 1ba:	80 81       	ld	r24, Z
+ 1bc:	80 7e       	andi	r24, 0xE0	; 224
+ 1be:	8b 60       	ori	r24, 0x0B	; 11
+ 1c0:	80 83       	st	Z, r24
+ 1c2:	e2 e4       	ldi	r30, 0x42	; 66
+ 1c4:	f1 e0       	ldi	r31, 0x01	; 1
+ 1c6:	80 81       	ld	r24, Z
+ 1c8:	80 7e       	andi	r24, 0xE0	; 224
+ 1ca:	86 60       	ori	r24, 0x06	; 6
+ 1cc:	80 83       	st	Z, r24
+ 1ce:	81 e0       	ldi	r24, 0x01	; 1
+ 1d0:	08 95       	ret
+ 1d2:	80 e0       	ldi	r24, 0x00	; 0
+ 1d4:	08 95       	ret
+
+000001d6 <rfWrite>:
+ 1d6:	cf 93       	push	r28
+ 1d8:	c8 2f       	mov	r28, r24
+ 1da:	e2 e4       	ldi	r30, 0x42	; 66
+ 1dc:	f1 e0       	ldi	r31, 0x01	; 1
+ 1de:	80 81       	ld	r24, Z
+ 1e0:	80 7e       	andi	r24, 0xE0	; 224
+ 1e2:	89 60       	ori	r24, 0x09	; 9
+ 1e4:	80 83       	st	Z, r24
+ 1e6:	e1 e4       	ldi	r30, 0x41	; 65
+ 1e8:	f1 e0       	ldi	r31, 0x01	; 1
+ 1ea:	90 81       	ld	r25, Z
+ 1ec:	99 70       	andi	r25, 0x09	; 9
+ 1ee:	e9 f3       	breq	.-6      	; 0x1ea <rfWrite+0x14>
+ 1f0:	61 e0       	ldi	r22, 0x01	; 1
+ 1f2:	70 e0       	ldi	r23, 0x00	; 0
+ 1f4:	86 e0       	ldi	r24, 0x06	; 6
+ 1f6:	90 e0       	ldi	r25, 0x00	; 0
+ 1f8:	83 d1       	rcall	.+774    	; 0x500 <led_control>
+ 1fa:	83 e0       	ldi	r24, 0x03	; 3
+ 1fc:	80 93 80 01 	sts	0x0180, r24
+ 200:	c0 93 81 01 	sts	0x0181, r28
+ 204:	e9 e3       	ldi	r30, 0x39	; 57
+ 206:	f1 e0       	ldi	r31, 0x01	; 1
+ 208:	80 81       	ld	r24, Z
+ 20a:	82 60       	ori	r24, 0x02	; 2
+ 20c:	80 83       	st	Z, r24
+ 20e:	80 81       	ld	r24, Z
+ 210:	8d 7f       	andi	r24, 0xFD	; 253
+ 212:	80 83       	st	Z, r24
+ 214:	e2 e4       	ldi	r30, 0x42	; 66
+ 216:	f1 e0       	ldi	r31, 0x01	; 1
+ 218:	80 81       	ld	r24, Z
+ 21a:	80 7e       	andi	r24, 0xE0	; 224
+ 21c:	86 60       	ori	r24, 0x06	; 6
+ 21e:	80 83       	st	Z, r24
+ 220:	cf 91       	pop	r28
+ 222:	08 95       	ret
+
+00000224 <__vector_63>:
+
+// This interrupt is called when radio TX is complete. We'll just
+// use it to turn off our TX LED.
+ISR(TRX24_TX_END_vect)
+{
+ 224:	1f 92       	push	r1
+ 226:	0f 92       	push	r0
+ 228:	0f b6       	in	r0, 0x3f	; 63
+ 22a:	0f 92       	push	r0
+ 22c:	11 24       	eor	r1, r1
+ 22e:	0b b6       	in	r0, 0x3b	; 59
+ 230:	0f 92       	push	r0
+ 232:	2f 93       	push	r18
+ 234:	3f 93       	push	r19
+ 236:	4f 93       	push	r20
+ 238:	5f 93       	push	r21
+ 23a:	6f 93       	push	r22
+ 23c:	7f 93       	push	r23
+ 23e:	8f 93       	push	r24
+ 240:	9f 93       	push	r25
+ 242:	af 93       	push	r26
+ 244:	bf 93       	push	r27
+ 246:	ef 93       	push	r30
+ 248:	ff 93       	push	r31
+  led_control(6,0);
+ 24a:	60 e0       	ldi	r22, 0x00	; 0
+ 24c:	70 e0       	ldi	r23, 0x00	; 0
+ 24e:	86 e0       	ldi	r24, 0x06	; 6
+ 250:	90 e0       	ldi	r25, 0x00	; 0
+ 252:	56 d1       	rcall	.+684    	; 0x500 <led_control>
+}
+ 254:	ff 91       	pop	r31
+ 256:	ef 91       	pop	r30
+ 258:	bf 91       	pop	r27
+ 25a:	af 91       	pop	r26
+ 25c:	9f 91       	pop	r25
+ 25e:	8f 91       	pop	r24
+ 260:	7f 91       	pop	r23
+ 262:	6f 91       	pop	r22
+ 264:	5f 91       	pop	r21
+ 266:	4f 91       	pop	r20
+ 268:	3f 91       	pop	r19
+ 26a:	2f 91       	pop	r18
+ 26c:	0f 90       	pop	r0
+ 26e:	0b be       	out	0x3b, r0	; 59
+ 270:	0f 90       	pop	r0
+ 272:	0f be       	out	0x3f, r0	; 63
+ 274:	0f 90       	pop	r0
+ 276:	1f 90       	pop	r1
+ 278:	18 95       	reti
+
+0000027a <__vector_59>:
+
+// This interrupt is called the moment data is received by the radio.
+// We'll use it to gather information about RSSI -- signal strength --
+// and we'll turn on the RX LED.
+ISR(TRX24_RX_START_vect)
+{
+ 27a:	1f 92       	push	r1
+ 27c:	0f 92       	push	r0
+ 27e:	0f b6       	in	r0, 0x3f	; 63
+ 280:	0f 92       	push	r0
+ 282:	11 24       	eor	r1, r1
+ 284:	0b b6       	in	r0, 0x3b	; 59
+ 286:	0f 92       	push	r0
+ 288:	2f 93       	push	r18
+ 28a:	3f 93       	push	r19
+ 28c:	4f 93       	push	r20
+ 28e:	5f 93       	push	r21
+ 290:	6f 93       	push	r22
+ 292:	7f 93       	push	r23
+ 294:	8f 93       	push	r24
+ 296:	9f 93       	push	r25
+ 298:	af 93       	push	r26
+ 29a:	bf 93       	push	r27
+ 29c:	ef 93       	push	r30
+ 29e:	ff 93       	push	r31
+  led_control(6,0);  // Turn receive LED on
+ 2a0:	60 e0       	ldi	r22, 0x00	; 0
+ 2a2:	70 e0       	ldi	r23, 0x00	; 0
+ 2a4:	86 e0       	ldi	r24, 0x06	; 6
+ 2a6:	90 e0       	ldi	r25, 0x00	; 0
+ 2a8:	2b d1       	rcall	.+598    	; 0x500 <led_control>
+  rssiRaw = PHY_RSSI;  // Read in the received signal strength
+ 2aa:	80 91 46 01 	lds	r24, 0x0146
+ 2ae:	80 93 af 02 	sts	0x02AF, r24
+}
+ 2b2:	ff 91       	pop	r31
+ 2b4:	ef 91       	pop	r30
+ 2b6:	bf 91       	pop	r27
+ 2b8:	af 91       	pop	r26
+ 2ba:	9f 91       	pop	r25
+ 2bc:	8f 91       	pop	r24
+ 2be:	7f 91       	pop	r23
+ 2c0:	6f 91       	pop	r22
+ 2c2:	5f 91       	pop	r21
+ 2c4:	4f 91       	pop	r20
+ 2c6:	3f 91       	pop	r19
+ 2c8:	2f 91       	pop	r18
+ 2ca:	0f 90       	pop	r0
+ 2cc:	0b be       	out	0x3b, r0	; 59
+ 2ce:	0f 90       	pop	r0
+ 2d0:	0f be       	out	0x3f, r0	; 63
+ 2d2:	0f 90       	pop	r0
+ 2d4:	1f 90       	pop	r1
+ 2d6:	18 95       	reti
+
+000002d8 <__vector_60>:
+
+// This interrupt is called at the end of data receipt. Here we'll gather
+// up the data received. And store it into a global variable. We'll
+// also turn off the RX LED.
+ISR(TRX24_RX_END_vect)
+{
+ 2d8:	1f 92       	push	r1
+ 2da:	0f 92       	push	r0
+ 2dc:	0f b6       	in	r0, 0x3f	; 63
+ 2de:	0f 92       	push	r0
+ 2e0:	11 24       	eor	r1, r1
+ 2e2:	0b b6       	in	r0, 0x3b	; 59
+ 2e4:	0f 92       	push	r0
+ 2e6:	cf 92       	push	r12
+ 2e8:	df 92       	push	r13
+ 2ea:	ef 92       	push	r14
+ 2ec:	ff 92       	push	r15
+ 2ee:	0f 93       	push	r16
+ 2f0:	1f 93       	push	r17
+ 2f2:	2f 93       	push	r18
+ 2f4:	3f 93       	push	r19
+ 2f6:	4f 93       	push	r20
+ 2f8:	5f 93       	push	r21
+ 2fa:	6f 93       	push	r22
+ 2fc:	7f 93       	push	r23
+ 2fe:	8f 93       	push	r24
+ 300:	9f 93       	push	r25
+ 302:	af 93       	push	r26
+ 304:	bf 93       	push	r27
+ 306:	ef 93       	push	r30
+ 308:	ff 93       	push	r31
+ 30a:	cf 93       	push	r28
+ 30c:	df 93       	push	r29
+ 30e:	cd b7       	in	r28, 0x3d	; 61
+ 310:	de b7       	in	r29, 0x3e	; 62
+ 312:	cf 57       	subi	r28, 0x7F	; 127
+ 314:	d1 09       	sbc	r29, r1
+ 316:	de bf       	out	0x3e, r29	; 62
+ 318:	cd bf       	out	0x3d, r28	; 61
+  uint8_t length;
+  // Maximum transmission is 128 bytes
+  uint8_t tempFrame[RF_BUFFER_SIZE];
+
+  // The received signal must be above a certain threshold.
+  if (rssiRaw & RX_CRC_VALID)
+ 31a:	80 91 af 02 	lds	r24, 0x02AF
+ 31e:	87 70       	andi	r24, 0x07	; 7
+ 320:	09 f4       	brne	.+2      	; 0x324 <__vector_60+0x4c>
+ 322:	82 c0       	rjmp	.+260    	; 0x428 <__vector_60+0x150>
+  {
+    // The length of the message will be the first byte received.
+    length = TST_RX_LENGTH;
+ 324:	10 91 7b 01 	lds	r17, 0x017B
+    // The remaining bytes will be our received data.
+    memcpy(&tempFrame[0], (void*)&TRXFBST, length);
+ 328:	c1 2e       	mov	r12, r17
+ 32a:	d1 2c       	mov	r13, r1
+ 32c:	a6 01       	movw	r20, r12
+ 32e:	60 e8       	ldi	r22, 0x80	; 128
+ 330:	71 e0       	ldi	r23, 0x01	; 1
+ 332:	ce 01       	movw	r24, r28
+ 334:	01 96       	adiw	r24, 0x01	; 1
+ 336:	96 d1       	rcall	.+812    	; 0x664 <memcpy>
+    
+    // Now we need to collect the frame into our receive buffer.
+    //  k will be used to make sure we don't go above the length
+    //  i will make sure we don't overflow our buffer.
+    unsigned int k = 0;
+    unsigned int i = (radioRXBuffer.head + 1) % RF_BUFFER_SIZE; // Read buffer head pos and increment;
+ 338:	e0 91 ab 02 	lds	r30, 0x02AB
+ 33c:	f0 91 ac 02 	lds	r31, 0x02AC
+ 340:	31 96       	adiw	r30, 0x01	; 1
+ 342:	9f 01       	movw	r18, r30
+ 344:	a5 e0       	ldi	r26, 0x05	; 5
+ 346:	b2 e0       	ldi	r27, 0x02	; 2
+ 348:	7e d1       	rcall	.+764    	; 0x646 <__umulhisi3>
+ 34a:	28 1b       	sub	r18, r24
+ 34c:	39 0b       	sbc	r19, r25
+ 34e:	36 95       	lsr	r19
+ 350:	27 95       	ror	r18
+ 352:	82 0f       	add	r24, r18
+ 354:	93 1f       	adc	r25, r19
+ 356:	00 24       	eor	r0, r0
+ 358:	88 0f       	add	r24, r24
+ 35a:	99 1f       	adc	r25, r25
+ 35c:	00 1c       	adc	r0, r0
+ 35e:	88 0f       	add	r24, r24
+ 360:	99 1f       	adc	r25, r25
+ 362:	00 1c       	adc	r0, r0
+ 364:	89 2f       	mov	r24, r25
+ 366:	90 2d       	mov	r25, r0
+ 368:	9c 01       	movw	r18, r24
+ 36a:	36 95       	lsr	r19
+ 36c:	32 2f       	mov	r19, r18
+ 36e:	22 27       	eor	r18, r18
+ 370:	37 95       	ror	r19
+ 372:	27 95       	ror	r18
+ 374:	a9 01       	movw	r20, r18
+ 376:	48 1b       	sub	r20, r24
+ 378:	59 0b       	sbc	r21, r25
+ 37a:	bf 01       	movw	r22, r30
+ 37c:	64 1b       	sub	r22, r20
+ 37e:	75 0b       	sbc	r23, r21
+ 380:	cb 01       	movw	r24, r22
+    while ((i != radioRXBuffer.tail) && (k < length-2))
+ 382:	20 91 ad 02 	lds	r18, 0x02AD
+ 386:	30 91 ae 02 	lds	r19, 0x02AE
+ 38a:	62 17       	cp	r22, r18
+ 38c:	73 07       	cpc	r23, r19
+ 38e:	09 f4       	brne	.+2      	; 0x392 <__vector_60+0xba>
+ 390:	4b c0       	rjmp	.+150    	; 0x428 <__vector_60+0x150>
+ 392:	12 30       	cpi	r17, 0x02	; 2
+ 394:	09 f4       	brne	.+2      	; 0x398 <__vector_60+0xc0>
+ 396:	48 c0       	rjmp	.+144    	; 0x428 <__vector_60+0x150>
+ 398:	8e 01       	movw	r16, r28
+ 39a:	0f 5f       	subi	r16, 0xFF	; 255
+ 39c:	1f 4f       	sbci	r17, 0xFF	; 255
+ 39e:	af ef       	ldi	r26, 0xFF	; 255
+ 3a0:	bf ef       	ldi	r27, 0xFF	; 255
+ 3a2:	ac 0f       	add	r26, r28
+ 3a4:	bd 1f       	adc	r27, r29
+ 3a6:	ca 0e       	add	r12, r26
+ 3a8:	db 1e       	adc	r13, r27
+    {
+      // First, we update the buffer with the first byte in the frame
+      radioRXBuffer.buffer[radioRXBuffer.head] = tempFrame[k++];
+ 3aa:	4b ea       	ldi	r20, 0xAB	; 171
+ 3ac:	52 e0       	ldi	r21, 0x02	; 2
+    // Now we need to collect the frame into our receive buffer.
+    //  k will be used to make sure we don't go above the length
+    //  i will make sure we don't overflow our buffer.
+    unsigned int k = 0;
+    unsigned int i = (radioRXBuffer.head + 1) % RF_BUFFER_SIZE; // Read buffer head pos and increment;
+    while ((i != radioRXBuffer.tail) && (k < length-2))
+ 3ae:	0f 2e       	mov	r0, r31
+ 3b0:	fd ea       	ldi	r31, 0xAD	; 173
+ 3b2:	ef 2e       	mov	r14, r31
+ 3b4:	f2 e0       	ldi	r31, 0x02	; 2
+ 3b6:	ff 2e       	mov	r15, r31
+ 3b8:	f0 2d       	mov	r31, r0
+    {
+      // First, we update the buffer with the first byte in the frame
+      radioRXBuffer.buffer[radioRXBuffer.head] = tempFrame[k++];
+ 3ba:	da 01       	movw	r26, r20
+ 3bc:	ed 91       	ld	r30, X+
+ 3be:	fc 91       	ld	r31, X
+ 3c0:	d8 01       	movw	r26, r16
+ 3c2:	2d 91       	ld	r18, X+
+ 3c4:	8d 01       	movw	r16, r26
+ 3c6:	e4 5d       	subi	r30, 0xD4	; 212
+ 3c8:	fd 4f       	sbci	r31, 0xFD	; 253
+ 3ca:	20 83       	st	Z, r18
+      radioRXBuffer.head = i; // Update the head
+ 3cc:	fa 01       	movw	r30, r20
+ 3ce:	91 83       	std	Z+1, r25	; 0x01
+ 3d0:	80 83       	st	Z, r24
+      i = (i + 1) % RF_BUFFER_SIZE; // Increment i % BUFFER_SIZE
+ 3d2:	fc 01       	movw	r30, r24
+ 3d4:	31 96       	adiw	r30, 0x01	; 1
+ 3d6:	9f 01       	movw	r18, r30
+ 3d8:	a5 e0       	ldi	r26, 0x05	; 5
+ 3da:	b2 e0       	ldi	r27, 0x02	; 2
+ 3dc:	34 d1       	rcall	.+616    	; 0x646 <__umulhisi3>
+ 3de:	28 1b       	sub	r18, r24
+ 3e0:	39 0b       	sbc	r19, r25
+ 3e2:	36 95       	lsr	r19
+ 3e4:	27 95       	ror	r18
+ 3e6:	82 0f       	add	r24, r18
+ 3e8:	93 1f       	adc	r25, r19
+ 3ea:	00 24       	eor	r0, r0
+ 3ec:	88 0f       	add	r24, r24
+ 3ee:	99 1f       	adc	r25, r25
+ 3f0:	00 1c       	adc	r0, r0
+ 3f2:	88 0f       	add	r24, r24
+ 3f4:	99 1f       	adc	r25, r25
+ 3f6:	00 1c       	adc	r0, r0
+ 3f8:	89 2f       	mov	r24, r25
+ 3fa:	90 2d       	mov	r25, r0
+ 3fc:	9c 01       	movw	r18, r24
+ 3fe:	36 95       	lsr	r19
+ 400:	32 2f       	mov	r19, r18
+ 402:	22 27       	eor	r18, r18
+ 404:	37 95       	ror	r19
+ 406:	27 95       	ror	r18
+ 408:	b9 01       	movw	r22, r18
+ 40a:	68 1b       	sub	r22, r24
+ 40c:	79 0b       	sbc	r23, r25
+ 40e:	df 01       	movw	r26, r30
+ 410:	a6 1b       	sub	r26, r22
+ 412:	b7 0b       	sbc	r27, r23
+ 414:	cd 01       	movw	r24, r26
+    // Now we need to collect the frame into our receive buffer.
+    //  k will be used to make sure we don't go above the length
+    //  i will make sure we don't overflow our buffer.
+    unsigned int k = 0;
+    unsigned int i = (radioRXBuffer.head + 1) % RF_BUFFER_SIZE; // Read buffer head pos and increment;
+    while ((i != radioRXBuffer.tail) && (k < length-2))
+ 416:	f7 01       	movw	r30, r14
+ 418:	20 81       	ld	r18, Z
+ 41a:	31 81       	ldd	r19, Z+1	; 0x01
+ 41c:	2a 17       	cp	r18, r26
+ 41e:	3b 07       	cpc	r19, r27
+ 420:	19 f0       	breq	.+6      	; 0x428 <__vector_60+0x150>
+ 422:	0c 15       	cp	r16, r12
+ 424:	1d 05       	cpc	r17, r13
+ 426:	49 f6       	brne	.-110    	; 0x3ba <__vector_60+0xe2>
+      radioRXBuffer.head = i; // Update the head
+      i = (i + 1) % RF_BUFFER_SIZE; // Increment i % BUFFER_SIZE
+    }
+  }
+
+  led_control(6,0);  // Turn receive LED off, and we're out
+ 428:	60 e0       	ldi	r22, 0x00	; 0
+ 42a:	70 e0       	ldi	r23, 0x00	; 0
+ 42c:	86 e0       	ldi	r24, 0x06	; 6
+ 42e:	90 e0       	ldi	r25, 0x00	; 0
+ 430:	67 d0       	rcall	.+206    	; 0x500 <led_control>
+}
+ 432:	c1 58       	subi	r28, 0x81	; 129
+ 434:	df 4f       	sbci	r29, 0xFF	; 255
+ 436:	0f b6       	in	r0, 0x3f	; 63
+ 438:	f8 94       	cli
+ 43a:	de bf       	out	0x3e, r29	; 62
+ 43c:	0f be       	out	0x3f, r0	; 63
+ 43e:	cd bf       	out	0x3d, r28	; 61
+ 440:	df 91       	pop	r29
+ 442:	cf 91       	pop	r28
+ 444:	ff 91       	pop	r31
+ 446:	ef 91       	pop	r30
+ 448:	bf 91       	pop	r27
+ 44a:	af 91       	pop	r26
+ 44c:	9f 91       	pop	r25
+ 44e:	8f 91       	pop	r24
+ 450:	7f 91       	pop	r23
+ 452:	6f 91       	pop	r22
+ 454:	5f 91       	pop	r21
+ 456:	4f 91       	pop	r20
+ 458:	3f 91       	pop	r19
+ 45a:	2f 91       	pop	r18
+ 45c:	1f 91       	pop	r17
+ 45e:	0f 91       	pop	r16
+ 460:	ff 90       	pop	r15
+ 462:	ef 90       	pop	r14
+ 464:	df 90       	pop	r13
+ 466:	cf 90       	pop	r12
+ 468:	0f 90       	pop	r0
+ 46a:	0b be       	out	0x3b, r0	; 59
+ 46c:	0f 90       	pop	r0
+ 46e:	0f be       	out	0x3f, r0	; 63
+ 470:	0f 90       	pop	r0
+ 472:	1f 90       	pop	r1
+ 474:	18 95       	reti
+
+00000476 <USART_Send>:
+	
+} // USART_Init
+
+int USART_Send(char sendByte)
+{
+	while(!(UCSR0A & (1 << UDRE0)));
+ 476:	e0 ec       	ldi	r30, 0xC0	; 192
+ 478:	f0 e0       	ldi	r31, 0x00	; 0
+ 47a:	90 81       	ld	r25, Z
+ 47c:	95 ff       	sbrs	r25, 5
+ 47e:	fd cf       	rjmp	.-6      	; 0x47a <USART_Send+0x4>
+	UDR0 = sendByte;
+ 480:	80 93 c6 00 	sts	0x00C6, r24
+	return SUCCESS;
+}
+ 484:	81 e0       	ldi	r24, 0x01	; 1
+ 486:	90 e0       	ldi	r25, 0x00	; 0
+ 488:	08 95       	ret
+
+0000048a <USART_Send_String>:
+
+void USART_Send_String(char *command){
+ 48a:	cf 93       	push	r28
+ 48c:	df 93       	push	r29
+ 48e:	ec 01       	movw	r28, r24
+
+	while(*command != 0x00){
+ 490:	88 81       	ld	r24, Y
+ 492:	88 23       	and	r24, r24
+ 494:	29 f0       	breq	.+10     	; 0x4a0 <USART_Send_String+0x16>
+ 496:	21 96       	adiw	r28, 0x01	; 1
+		USART_Send(*command);
+ 498:	ee df       	rcall	.-36     	; 0x476 <USART_Send>
+	return SUCCESS;
+}
+
+void USART_Send_String(char *command){
+
+	while(*command != 0x00){
+ 49a:	89 91       	ld	r24, Y+
+ 49c:	81 11       	cpse	r24, r1
+ 49e:	fc cf       	rjmp	.-8      	; 0x498 <USART_Send_String+0xe>
+		USART_Send(*command);
+	command++;}
+}
+ 4a0:	df 91       	pop	r29
+ 4a2:	cf 91       	pop	r28
+ 4a4:	08 95       	ret
+
+000004a6 <USART_Init>:
+#include "UART.h"
+#include <util/delay.h>
+
+void USART_Init(void)
+{
+	UCSR0B = (1 << RXEN0) | (1 << TXEN0);   // Turn on the transmission and reception circuitry
+ 4a6:	88 e1       	ldi	r24, 0x18	; 24
+ 4a8:	80 93 c1 00 	sts	0x00C1, r24
+	UCSR0C = (1 << UCSZ00) | (1 << UCSZ01); // Use 8-bit character sizes
+ 4ac:	86 e0       	ldi	r24, 0x06	; 6
+ 4ae:	80 93 c2 00 	sts	0x00C2, r24
+
+	UBRR0H = (BAUD_PRESCALE >> 8); // Load upper 8-bits of the baud rate value into the high byte of the UBRR register
+ 4b2:	10 92 c5 00 	sts	0x00C5, r1
+	UBRR0L = BAUD_PRESCALE; // Load lower 8-bits of the baud rate value into the low byte of the UBRR register
+ 4b6:	87 e6       	ldi	r24, 0x67	; 103
+ 4b8:	80 93 c4 00 	sts	0x00C4, r24
+	
+	USART_Send_String("It's going to be legen...");
+ 4bc:	80 e0       	ldi	r24, 0x00	; 0
+ 4be:	92 e0       	ldi	r25, 0x02	; 2
+ 4c0:	e4 df       	rcall	.-56     	; 0x48a <USART_Send_String>
+	#else
+		//round up by default
+		__ticks_dc = (uint32_t)(ceil(fabs(__tmp)));
+	#endif
+
+	__builtin_avr_delay_cycles(__ticks_dc);
+ 4c2:	2f ef       	ldi	r18, 0xFF	; 255
+ 4c4:	87 ea       	ldi	r24, 0xA7	; 167
+ 4c6:	91 e6       	ldi	r25, 0x61	; 97
+ 4c8:	21 50       	subi	r18, 0x01	; 1
+ 4ca:	80 40       	sbci	r24, 0x00	; 0
+ 4cc:	90 40       	sbci	r25, 0x00	; 0
+ 4ce:	e1 f7       	brne	.-8      	; 0x4c8 <USART_Init+0x22>
+ 4d0:	00 c0       	rjmp	.+0      	; 0x4d2 <USART_Init+0x2c>
+ 4d2:	00 00       	nop
+	_delay_ms(2000);
+	USART_Send_String("dary!\n");	
+ 4d4:	8a e1       	ldi	r24, 0x1A	; 26
+ 4d6:	92 e0       	ldi	r25, 0x02	; 2
+ 4d8:	d8 cf       	rjmp	.-80     	; 0x48a <USART_Send_String>
+ 4da:	08 95       	ret
+
+000004dc <board_init>:
+{
+	/* This function is meant to contain board-specific initialization code
+	 * for, e.g., the I/O pins. The initialization can rely on application-
+	 * specific board configuration, found in conf_board.h.
+	 */
+	DDRB |= 1<<6;
+ 4dc:	26 9a       	sbi	0x04, 6	; 4
+	DDRB |= 1<<7;
+ 4de:	27 9a       	sbi	0x04, 7	; 4
+		
+		
+	// Timer0 configuration
+	// CLEAR ON OCRA, PRESCALER TO 64, CTC ON, OCR0A TO 124, OCR0A INT ENABLE
+	TCCR1B |= (1 << WGM12); // WaveformGenerationMode13:10 = 0x4
+ 4e0:	e1 e8       	ldi	r30, 0x81	; 129
+ 4e2:	f0 e0       	ldi	r31, 0x00	; 0
+ 4e4:	80 81       	ld	r24, Z
+ 4e6:	88 60       	ori	r24, 0x08	; 8
+ 4e8:	80 83       	st	Z, r24
+	//TIMSK1 |= (1 << OCIE1A); // Enable CTC interrupt
+	OCR1A = 15624;
+ 4ea:	88 e0       	ldi	r24, 0x08	; 8
+ 4ec:	9d e3       	ldi	r25, 0x3D	; 61
+ 4ee:	90 93 89 00 	sts	0x0089, r25
+ 4f2:	80 93 88 00 	sts	0x0088, r24
+	//TCCR0A = 0b00000010; //timer control register A and B
+	TCCR1B |= ((1 << CS10) | (1 << CS11)); // ClockSelect12:10 = 0x03 = 64 Prescaler
+ 4f6:	80 81       	ld	r24, Z
+ 4f8:	83 60       	ori	r24, 0x03	; 3
+ 4fa:	80 83       	st	Z, r24
+	sei(); //enable global interrupt
+ 4fc:	78 94       	sei
+ 4fe:	08 95       	ret
+
+00000500 <led_control>:
+#include "HW_Interface.h"
+#include "Defines.h"
+
+void led_control(int color, int state)
+{
+	if((color == 6) || (color == 7))
+ 500:	9c 01       	movw	r18, r24
+ 502:	26 50       	subi	r18, 0x06	; 6
+ 504:	31 09       	sbc	r19, r1
+ 506:	22 30       	cpi	r18, 0x02	; 2
+ 508:	31 05       	cpc	r19, r1
+ 50a:	08 f0       	brcs	.+2      	; 0x50e <led_control+0xe>
+ 50c:	48 c0       	rjmp	.+144    	; 0x59e <led_control+0x9e>
+	{
+		switch(state)
+ 50e:	61 30       	cpi	r22, 0x01	; 1
+ 510:	71 05       	cpc	r23, r1
+ 512:	a1 f0       	breq	.+40     	; 0x53c <led_control+0x3c>
+ 514:	62 30       	cpi	r22, 0x02	; 2
+ 516:	71 05       	cpc	r23, r1
+ 518:	f1 f0       	breq	.+60     	; 0x556 <led_control+0x56>
+ 51a:	67 2b       	or	r22, r23
+ 51c:	09 f0       	breq	.+2      	; 0x520 <led_control+0x20>
+ 51e:	3f c0       	rjmp	.+126    	; 0x59e <led_control+0x9e>
+		{
+			
+			case OFF :	PORTB &= ~(1<<color); break;
+ 520:	45 b1       	in	r20, 0x05	; 5
+ 522:	21 e0       	ldi	r18, 0x01	; 1
+ 524:	30 e0       	ldi	r19, 0x00	; 0
+ 526:	b9 01       	movw	r22, r18
+ 528:	02 c0       	rjmp	.+4      	; 0x52e <led_control+0x2e>
+ 52a:	66 0f       	add	r22, r22
+ 52c:	77 1f       	adc	r23, r23
+ 52e:	8a 95       	dec	r24
+ 530:	e2 f7       	brpl	.-8      	; 0x52a <led_control+0x2a>
+ 532:	cb 01       	movw	r24, r22
+ 534:	80 95       	com	r24
+ 536:	84 23       	and	r24, r20
+ 538:	85 b9       	out	0x05, r24	; 5
+ 53a:	08 95       	ret
+			case ON :	PORTB |= (1<<color); break;
+ 53c:	45 b1       	in	r20, 0x05	; 5
+ 53e:	21 e0       	ldi	r18, 0x01	; 1
+ 540:	30 e0       	ldi	r19, 0x00	; 0
+ 542:	b9 01       	movw	r22, r18
+ 544:	02 c0       	rjmp	.+4      	; 0x54a <led_control+0x4a>
+ 546:	66 0f       	add	r22, r22
+ 548:	77 1f       	adc	r23, r23
+ 54a:	8a 95       	dec	r24
+ 54c:	e2 f7       	brpl	.-8      	; 0x546 <led_control+0x46>
+ 54e:	cb 01       	movw	r24, r22
+ 550:	84 2b       	or	r24, r20
+ 552:	85 b9       	out	0x05, r24	; 5
+ 554:	08 95       	ret
+			case SWAP :	if(PORTB & (1<<color)) PORTB &= ~(1<<color); else PORTB |= (1<<color); break;
+ 556:	25 b1       	in	r18, 0x05	; 5
+ 558:	30 e0       	ldi	r19, 0x00	; 0
+ 55a:	08 2e       	mov	r0, r24
+ 55c:	02 c0       	rjmp	.+4      	; 0x562 <led_control+0x62>
+ 55e:	35 95       	asr	r19
+ 560:	27 95       	ror	r18
+ 562:	0a 94       	dec	r0
+ 564:	e2 f7       	brpl	.-8      	; 0x55e <led_control+0x5e>
+ 566:	20 ff       	sbrs	r18, 0
+ 568:	0e c0       	rjmp	.+28     	; 0x586 <led_control+0x86>
+ 56a:	45 b1       	in	r20, 0x05	; 5
+ 56c:	21 e0       	ldi	r18, 0x01	; 1
+ 56e:	30 e0       	ldi	r19, 0x00	; 0
+ 570:	b9 01       	movw	r22, r18
+ 572:	02 c0       	rjmp	.+4      	; 0x578 <led_control+0x78>
+ 574:	66 0f       	add	r22, r22
+ 576:	77 1f       	adc	r23, r23
+ 578:	8a 95       	dec	r24
+ 57a:	e2 f7       	brpl	.-8      	; 0x574 <led_control+0x74>
+ 57c:	cb 01       	movw	r24, r22
+ 57e:	80 95       	com	r24
+ 580:	84 23       	and	r24, r20
+ 582:	85 b9       	out	0x05, r24	; 5
+ 584:	08 95       	ret
+ 586:	45 b1       	in	r20, 0x05	; 5
+ 588:	21 e0       	ldi	r18, 0x01	; 1
+ 58a:	30 e0       	ldi	r19, 0x00	; 0
+ 58c:	b9 01       	movw	r22, r18
+ 58e:	02 c0       	rjmp	.+4      	; 0x594 <led_control+0x94>
+ 590:	66 0f       	add	r22, r22
+ 592:	77 1f       	adc	r23, r23
+ 594:	8a 95       	dec	r24
+ 596:	e2 f7       	brpl	.-8      	; 0x590 <led_control+0x90>
+ 598:	cb 01       	movw	r24, r22
+ 59a:	84 2b       	or	r24, r20
+ 59c:	85 b9       	out	0x05, r24	; 5
+ 59e:	08 95       	ret
+
+000005a0 <setup>:
+
+
+void setup(void);
+
+void setup(void)
+{
+ 5a0:	cf 93       	push	r28
+ 5a2:	df 93       	push	r29
+	int i = 0;
+	for(i=0; i<10; i++)
+ 5a4:	c0 e0       	ldi	r28, 0x00	; 0
+ 5a6:	d0 e0       	ldi	r29, 0x00	; 0
+	{
+		led_control(6,i%2);
+ 5a8:	be 01       	movw	r22, r28
+ 5aa:	61 70       	andi	r22, 0x01	; 1
+ 5ac:	70 78       	andi	r23, 0x80	; 128
+ 5ae:	77 23       	and	r23, r23
+ 5b0:	34 f4       	brge	.+12     	; 0x5be <setup+0x1e>
+ 5b2:	61 50       	subi	r22, 0x01	; 1
+ 5b4:	71 09       	sbc	r23, r1
+ 5b6:	6e 6f       	ori	r22, 0xFE	; 254
+ 5b8:	7f 6f       	ori	r23, 0xFF	; 255
+ 5ba:	6f 5f       	subi	r22, 0xFF	; 255
+ 5bc:	7f 4f       	sbci	r23, 0xFF	; 255
+ 5be:	86 e0       	ldi	r24, 0x06	; 6
+ 5c0:	90 e0       	ldi	r25, 0x00	; 0
+ 5c2:	9e df       	rcall	.-196    	; 0x500 <led_control>
+		led_control(7,(i+1)%2);
+ 5c4:	21 96       	adiw	r28, 0x01	; 1
+ 5c6:	be 01       	movw	r22, r28
+ 5c8:	61 70       	andi	r22, 0x01	; 1
+ 5ca:	70 78       	andi	r23, 0x80	; 128
+ 5cc:	77 23       	and	r23, r23
+ 5ce:	34 f4       	brge	.+12     	; 0x5dc <setup+0x3c>
+ 5d0:	61 50       	subi	r22, 0x01	; 1
+ 5d2:	71 09       	sbc	r23, r1
+ 5d4:	6e 6f       	ori	r22, 0xFE	; 254
+ 5d6:	7f 6f       	ori	r23, 0xFF	; 255
+ 5d8:	6f 5f       	subi	r22, 0xFF	; 255
+ 5da:	7f 4f       	sbci	r23, 0xFF	; 255
+ 5dc:	87 e0       	ldi	r24, 0x07	; 7
+ 5de:	90 e0       	ldi	r25, 0x00	; 0
+ 5e0:	8f df       	rcall	.-226    	; 0x500 <led_control>
+ 5e2:	2f ef       	ldi	r18, 0xFF	; 255
+ 5e4:	81 ee       	ldi	r24, 0xE1	; 225
+ 5e6:	94 e0       	ldi	r25, 0x04	; 4
+ 5e8:	21 50       	subi	r18, 0x01	; 1
+ 5ea:	80 40       	sbci	r24, 0x00	; 0
+ 5ec:	90 40       	sbci	r25, 0x00	; 0
+ 5ee:	e1 f7       	brne	.-8      	; 0x5e8 <setup+0x48>
+ 5f0:	00 c0       	rjmp	.+0      	; 0x5f2 <setup+0x52>
+ 5f2:	00 00       	nop
+void setup(void);
+
+void setup(void)
+{
+	int i = 0;
+	for(i=0; i<10; i++)
+ 5f4:	ca 30       	cpi	r28, 0x0A	; 10
+ 5f6:	d1 05       	cpc	r29, r1
+ 5f8:	b9 f6       	brne	.-82     	; 0x5a8 <setup+0x8>
+		led_control(7,(i+1)%2);
+		_delay_ms(100);
+	}
+	
+	// RF Configuration
+	if(rfBegin(11) == SUCCESS)
+ 5fa:	8b e0       	ldi	r24, 0x0B	; 11
+ 5fc:	af dd       	rcall	.-1186   	; 0x15c <rfBegin>
+ 5fe:	81 30       	cpi	r24, 0x01	; 1
+ 600:	21 f4       	brne	.+8      	; 0x60a <setup+0x6a>
+		USART_Send_String("RF SUCCESS");
+ 602:	81 e2       	ldi	r24, 0x21	; 33
+ 604:	92 e0       	ldi	r25, 0x02	; 2
+ 606:	41 df       	rcall	.-382    	; 0x48a <USART_Send_String>
+ 608:	03 c0       	rjmp	.+6      	; 0x610 <setup+0x70>
+	else
+		USART_Send_String("RF SUCCESS");
+ 60a:	81 e2       	ldi	r24, 0x21	; 33
+ 60c:	92 e0       	ldi	r25, 0x02	; 2
+ 60e:	3d df       	rcall	.-390    	; 0x48a <USART_Send_String>
+}
+ 610:	df 91       	pop	r29
+ 612:	cf 91       	pop	r28
+ 614:	08 95       	ret
+
+00000616 <main>:
+{
+	/* Initialize the board.
+	 * The board-specific conf_board.h file contains the configuration of
+	 * the board initialization.
+	 */
+	board_init();
+ 616:	62 df       	rcall	.-316    	; 0x4dc <board_init>
+	USART_Init();
+ 618:	46 df       	rcall	.-372    	; 0x4a6 <USART_Init>
+	setup();
+ 61a:	c2 df       	rcall	.-124    	; 0x5a0 <setup>
+	char ReceivedByte;
+	char rf_receive_char;
+			
+	for (;;) // Loop forever
+	{
+ 		while ((UCSR0A & (1 << RXC0)) == 0) {}; // Do nothing until data have been received and is ready to be read from UDR
+ 61c:	c0 ec       	ldi	r28, 0xC0	; 192
+ 61e:	d0 e0       	ldi	r29, 0x00	; 0
+ 		ReceivedByte = UDR0; // Fetch the received byte value into the variable "ByteReceived"
+ 620:	06 ec       	ldi	r16, 0xC6	; 198
+ 622:	10 e0       	ldi	r17, 0x00	; 0
+	char ReceivedByte;
+	char rf_receive_char;
+			
+	for (;;) // Loop forever
+	{
+ 		while ((UCSR0A & (1 << RXC0)) == 0) {}; // Do nothing until data have been received and is ready to be read from UDR
+ 624:	88 81       	ld	r24, Y
+ 626:	88 23       	and	r24, r24
+ 628:	ec f7       	brge	.-6      	; 0x624 <main+0xe>
+ 		ReceivedByte = UDR0; // Fetch the received byte value into the variable "ByteReceived"
+ 62a:	f8 01       	movw	r30, r16
+ 62c:	80 81       	ld	r24, Z
+		
+		rfWrite(ReceivedByte);
+ 62e:	d3 dd       	rcall	.-1114   	; 0x1d6 <rfWrite>
+// 			
+// 		}
+// 		led_control(6,SWAP);
+// 		led_control(7,SWAP);
+// 		_delay_ms(10);
+	}
+ 630:	f9 cf       	rjmp	.-14     	; 0x624 <main+0xe>
+
+00000632 <__vector_17>:
+}
+
+
+ISR(TIMER1_COMPA_vect) // replace all spaces with underscores, and append "_vect" to the end of the vector's name.
+{
+ 632:	1f 92       	push	r1
+ 634:	0f 92       	push	r0
+ 636:	0f b6       	in	r0, 0x3f	; 63
+ 638:	0f 92       	push	r0
+ 63a:	11 24       	eor	r1, r1
+// 	else
+// 	{
+// 		led_control(7,1);
+// 		mem = 1;
+// 	}
+}
+ 63c:	0f 90       	pop	r0
+ 63e:	0f be       	out	0x3f, r0	; 63
+ 640:	0f 90       	pop	r0
+ 642:	1f 90       	pop	r1
+ 644:	18 95       	reti
+
+00000646 <__umulhisi3>:
+ 646:	a2 9f       	mul	r26, r18
+ 648:	b0 01       	movw	r22, r0
+ 64a:	b3 9f       	mul	r27, r19
+ 64c:	c0 01       	movw	r24, r0
+ 64e:	a3 9f       	mul	r26, r19
+ 650:	70 0d       	add	r23, r0
+ 652:	81 1d       	adc	r24, r1
+ 654:	11 24       	eor	r1, r1
+ 656:	91 1d       	adc	r25, r1
+ 658:	b2 9f       	mul	r27, r18
+ 65a:	70 0d       	add	r23, r0
+ 65c:	81 1d       	adc	r24, r1
+ 65e:	11 24       	eor	r1, r1
+ 660:	91 1d       	adc	r25, r1
+ 662:	08 95       	ret
+
+00000664 <memcpy>:
+ 664:	fb 01       	movw	r30, r22
+ 666:	dc 01       	movw	r26, r24
+ 668:	02 c0       	rjmp	.+4      	; 0x66e <memcpy+0xa>
+ 66a:	01 90       	ld	r0, Z+
+ 66c:	0d 92       	st	X+, r0
+ 66e:	41 50       	subi	r20, 0x01	; 1
+ 670:	50 40       	sbci	r21, 0x00	; 0
+ 672:	d8 f7       	brcc	.-10     	; 0x66a <memcpy+0x6>
+ 674:	08 95       	ret
+
+00000676 <_exit>:
+ 676:	f8 94       	cli
+
+00000678 <__stop_program>:
+ 678:	ff cf       	rjmp	.-2      	; 0x678 <__stop_program>

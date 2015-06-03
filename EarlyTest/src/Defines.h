@@ -24,6 +24,59 @@
 #define LED_R 2
 
 
+#define FLSH 1 
+#define FLSL 1
+#define FLLH 1
+#define FLLL 1
+
+#define BSR_SRCLK	PORTF1 //TO BE CHECKED
+#define BSR_RCLK	PORTF2
+#define BSR_SER		PORTF0
+#define BSR_PORT	PORTF // IS THAT A VALID SYNTAX?
+#define NB_BSR		2 //How many of the shift registers are daisy-chained
+
+
+#define T11	0x2
+#define T12	0x3
+#define T21	0x6
+#define T22	0x7
+#define T31	0x1
+#define T32	0x0
+#define T41	0x4
+#define T42	0x5
+#define T51	14
+#define T52	15
+#define T61	13
+#define T62	12
+#define T71	9
+#define T72	8
+#define T81	10
+#define T82	11
+
+#define LFL 6
+#define LFR 1
+#define LRL 8
+#define LRR 4
+#define SFL 7
+#define SFR 2
+#define SRL 5
+#define SRR 3
+
+#define GND 0
+#define HV	1
+#define FLT 2
+
+#define LIFT 0
+#define SWING_F 1
+#define SWING_R 2
+
+#define NOW	0
+#define NEXT	1
+#define FLOAT_V 0
+#define HV_OR_GND 1
+#define TRUE 1
+#define FALSE 0
+
 // /*
 // typedef enum tal_trx_status_tag {
 // 	/** Constant P_ON for sub-register @ref SR_TRX_STATUS */

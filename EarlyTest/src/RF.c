@@ -32,13 +32,10 @@
 #include <avr/io.h> // Required for digitalWrites, etc.
 #include <avr/interrupt.h>
 #include <avr/sfr_defs.h>
-#include "HW_Interface.h"
+//#include "HW_Interface.h"
 #include "RF.h"
 #include "UART.h"
 
-// Board pin definitions.
-//const int RX_LED = 34;  // B6 - RF RX LED
-//const int TX_LED = 35;  // B7 - RF TX LED
 uint8_t rssiRaw; // Global variable shared between RX ISRs
 
 // A buffer to maintain data being received by radio.
@@ -117,9 +114,9 @@ uint8_t rfBegin(uint8_t channel)
 	return SUCCESS;
 }
 
-uint8_t rfInitStd802_15_4()
+uint8_t rfInitStd802_15_4(void)
 {
-	
+	return 0;
 	
 }
 

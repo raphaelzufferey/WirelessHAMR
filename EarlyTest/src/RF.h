@@ -9,7 +9,7 @@
 //  Initializes the radio on a channel between 11 and 26.
 uint8_t rfBegin(uint8_t channel);
 
-uint8_t rfInitStd802_15_4();
+uint8_t rfInitStd802_15_4(void);
 
 //Sends a byte over the radio
 void rfWrite(uint8_t b);
